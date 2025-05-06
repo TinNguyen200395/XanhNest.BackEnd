@@ -1,0 +1,4 @@
+git rm --cached -r bin/
+git rm --cached -r obj/
+git rm --cached XanhNest.BackEndServer/bin/Debug/net6.0/appsettings.json
+git rm --cached XanhNest.BackEndServer/API/Controllers/AuthController.cs
