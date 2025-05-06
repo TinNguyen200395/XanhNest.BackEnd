@@ -1,0 +1,78 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.36" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.36">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.29" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.36" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.36" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="6.0.36" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="API\" />
+    <None Remove="API\Controllers\" />
+    <None Remove="API\Middlewares\" />
+    <None Remove="API\Filters\" />
+    <None Remove="Application\" />
+    <None Remove="Application\Interfaces\" />
+    <None Remove="Application\Services\" />
+    <None Remove="Application\DTOs\" />
+    <None Remove="Infrastructure\" />
+    <None Remove="Domain\" />
+    <None Remove="Domain\Enums\" />
+    <None Remove="Persistence\" />
+    <None Remove="Persistence\Context\" />
+    <None Remove="Persistence\Repositories\" />
+    <None Remove="Persistence\Migrations\" />
+    <None Remove="Infrastructure\Authentication\" />
+    <None Remove="Infrastructure\Logging\" />
+    <None Remove="Infrastructure\Email\" />
+    <None Remove="Application\Mappings\" />
+    <None Remove="Application\DTOs\Requests\" />
+    <None Remove="Application\DTOs\Responses\" />
+    <None Remove="Application\DTOs\Requests\Auth\" />
+    <None Remove="Persistence\Repositories\Interfaces\" />
+    <None Remove="Persistence\Repositories\Implements\" />
+    <None Remove="Application\Configurations\" />
+    <None Remove="Application\Settings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="API\" />
+    <Folder Include="API\Controllers\" />
+    <Folder Include="API\Middlewares\" />
+    <Folder Include="API\Filters\" />
+    <Folder Include="Application\" />
+    <Folder Include="Application\Interfaces\" />
+    <Folder Include="Application\Services\" />
+    <Folder Include="Application\DTOs\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Domain\Enums\" />
+    <Folder Include="Persistence\" />
+    <Folder Include="Persistence\Context\" />
+    <Folder Include="Persistence\Repositories\" />
+    <Folder Include="Persistence\Migrations\" />
+    <Folder Include="Infrastructure\Authentication\" />
+    <Folder Include="Infrastructure\Logging\" />
+    <Folder Include="Infrastructure\Email\" />
+    <Folder Include="Application\Mappings\" />
+    <Folder Include="Application\DTOs\Requests\" />
+    <Folder Include="Application\DTOs\Responses\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Application\DTOs\Requests\Auth\" />
+    <Folder Include="Persistence\Repositories\Interfaces\" />
+    <Folder Include="Persistence\Repositories\Implements\" />
+    <Folder Include="Application\Configurations\" />
+    <Folder Include="Application\Settings\" />
+  </ItemGroup>
+</Project>
